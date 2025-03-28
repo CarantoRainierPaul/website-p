@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(180deg, #ECDFCC, #FFFAEC);
+    min-height: 100vh; /* Ensures full-page background coverage */
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    font-size: 80px;
+}
+
+p.childhood {
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    background: #3C3D37;
+    text-align: center;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #ECDFCC;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    background: #3C3D37;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:link {
+    color: #ECDFCC;
+}
+
+ul li a:visited {
+    color: #FFFAEC;
+}
+
+ul li a:focus {
+    text-decoration: underline;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+    color: #ECDFCC;
+}
+
+ul li a:active {
+    text-decoration: underline;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.center-logo {
+    position: absolute;
+    top: 37%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Adjust size as needed */
+    height: auto;
+    z-index: 10; /* Ensures it stays on top */
+}
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px; /* Adds space between navbar and content */
+}
+
+.text-box {
+    width: 60%; /* Adjusted for better spacing */
+    background: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid black; /* Added black border */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-box {
+    width: 35%; /* Adjusted for better proportion */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;  
+    justify-content: center;  
+    gap: 20px; 
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+img {
+    width: 350px; 
+    height: auto;
+}
+
+/* Social Media Icons */
+.social-icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Video Section */
+.video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    gap: 20px;
+}
+
+.video-wrapper video {
+    width: 70%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Description */
+.video-description {
+    max-width: 80%;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3C3D37;
+}
+
+.video-description h2 {
+    font-size: 28px;
+    color: #555;
+}
+
+/* Image Styling */
+.center-logo {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+p.des{
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-wrapper video {
+        width: 90%;
+    }
+    .video-description {
+        max-width: 90%;
+    }
+}
+
+/* Back to Top Button */
+.back-to-top {
+    display: block;
+    width: 150px;
+    margin: 30px auto;
+    padding: 10px;
+    text-align: center;
+    background: #3C3D37;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background: #555;
+}

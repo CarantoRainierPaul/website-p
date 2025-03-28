@@ -1,0 +1,164 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px; /* Adjust based on navbar height */
+    background: #FFFAEC;
+    color: #FFFAEC;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #3C3D37;
+    overflow: visible;
+    position: fixed; /* Keeps navbar at the top */
+    top: 0; /* Aligns navbar to the very top */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it's always on top */
+}
+
+ul li {
+    display: inline-block;
+    position: relative; /* Ensures dropdown aligns correctly */
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #ECDFCC;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Fix dropdown menu */
+ul li ul.dropdown {
+    position: absolute;
+    top: 100%; /* Position dropdown right below parent */
+    left: 50%; /* Align to center */
+    transform: translateX(-50%); /* Shift left to center it */
+    background: #3C3D37;
+    width: 150px; /* Adjust width as needed */
+    display: none;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 0;
+    z-index: 999;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    width: 100%; /* Makes the dropdown full width */
+}
+
+ul li ul.dropdown li a {
+    padding: 12px 15px; /* Better spacing */
+    display: block;
+    color: #ECDFCC;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+ul li:hover ul.dropdown {
+    display: block; /* Shows dropdown when hovering */
+}
+
+/* Dropdown item hover effect */
+ul li ul.dropdown li a:hover {
+    background: #555;
+}
+
+ul li a:link{
+    color: #ECDFCC;
+}
+ul li a:visited{
+    color: #FFFAEC;
+}
+ul li a:focus{
+    text-decoration: underline;
+}
+ul li a:hover{
+     text-decoration: underline;
+     color:#ECDFCC;
+
+}
+ul li a:active{
+    text-decoration: underline;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.movie {
+    margin-bottom: 60px;
+    padding: 20px;
+    background: #444;
+    border-radius: 10px;
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    
+}
+
+.movie img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+h1.header {
+    position: relative;
+    text-align: center; /* Aligns text to the left */
+    font-size: 80px; /* Makes it stand out */
+    font-weight: bold; /* Increases visibility */
+    color: #333;
+    margin-top: 30px; /* Dark gray for better readability */
+    margin-left: 20px; /* Pushes it further left */
+    margin-bottom: 10px; /* Keeps it close to the paragraph */
+    text-transform: uppercase; /* Makes it look more structured */
+    border-left: 5px solid black; /* Adds a nice left border */
+    border-right: 5px solid black;
+    padding-left: 10px; /* Creates space between text and border */
+}
+
+h2 {
+    color: #f4b400;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+strong {
+    color: #f4b400;
+}
+

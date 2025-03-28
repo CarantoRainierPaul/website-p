@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(180deg, #ECDFCC, #FFFAEC);
+            text-align: center;
+            padding-top: 60px;
+        }
+        ul {
+    list-style-type: none;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #3C3D37;
+    overflow: visible;
+    position: fixed; /* Keeps navbar at the top */
+    top: 0; /* Aligns navbar to the very top */
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it's always on top */
+}
+
+ul li {
+    display: inline-block;
+    position: relative; /* Ensures dropdown aligns correctly */
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #ECDFCC;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Fix dropdown menu */
+ul li ul.dropdown {
+    position: absolute;
+    top: 100%; /* Position dropdown right below parent */
+    left: 50%; /* Align to center */
+    transform: translateX(-50%); /* Shift left to center it */
+    background: #3C3D37;
+    width: 150px; /* Adjust width as needed */
+    display: none;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 0;
+    z-index: 999;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    width: 100%; /* Makes the dropdown full width */
+}
+
+ul li ul.dropdown li a {
+    padding: 12px 15px; /* Better spacing */
+    display: block;
+    color: #ECDFCC;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+ul li:hover ul.dropdown {
+    display: block; /* Shows dropdown when hovering */
+}
+
+/* Dropdown item hover effect */
+ul li ul.dropdown li a:hover {
+    background: #555;
+}
+
+ul li a:link{
+    color: #ECDFCC;
+}
+ul li a:visited{
+    color: #FFFAEC;
+}
+ul li a:focus{
+    text-decoration: underline;
+}
+ul li a:hover{
+     text-decoration: underline;
+     color:#ECDFCC;
+
+}
+ul li a:active{
+    text-decoration: underline;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+
+}
+        .bucket-item {
+            margin: 20px auto;
+            padding: 20px;
+            width: 60%;
+            background: #3C3D37;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .content {
+    margin-top: 60px; /* Pushes content down to avoid overlap */
+}
+.content h1{
+    position: relative;
+    text-align: center; /* Aligns text to the left */
+    font-size: 80px; /* Makes it stand out */
+    font-weight: bold; /* Increases visibility */
+    color: #333;
+    margin-top: 30px; /* Dark gray for better readability */
+    margin-left: 20px; /* Pushes it further left */
+    margin-bottom: 10px; /* Keeps it close to the paragraph */
+    text-transform: uppercase; /* Makes it look more structured */
+    padding-left: 10px; /* Creates space between text and border */
+}
+.bucket-item h2{
+    color: #FFFAEC;
+}
+p{
+    color: #FFFAEC;
+}
+.back-to-top {
+            display: block;
+            width: 150px;
+            margin: 30px auto;
+            padding: 10px;
+            text-align: center;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .back-to-top:hover {
+            background: #555;
+        }
+
+    </style>
+</head>
+<body id="top">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="#">Biography ⬇</a>
+            <ul class="dropdown">
+                <li><a href="chy.html">Childhood Years</a></li>
+                <li><a href="tny.html">Teenage Years</a></li>
+                <li><a href="cle.html">College Experience</a></li>
+            </ul>    
+        </li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="photo_gallery.html">Photo Gallery</a></li>
+        <li><a href="beats.html">My Music</a></li>
+        <li><a href="movies.html">Movies I Like</a></li>
+        <li><a href="shows.html">TV Shows I like</a></li>
+        <li><a href="places.html">Dream Places</a></li>
+        <li><a href="bucket.html">Bucket Lists</a></li>
+    </ul>
+    <div class="content">
+        <h1>My Bucket List</h1>
+        <div class="bucket-item">
+            <h2>Attend a J. Cole Concert</h2>
+            <a href="Posters/J-Cole-Dreamville-Fest.webp" target="_self">
+                <img src="Posters/J-Cole-Dreamville-Fest.webp" alt="J. Cole Concert">
+            </a>
+            <p>My first on the list is the J. Cole’s Concert. I’ve been a fan of J. Cole for years and it is my lifetime wish to watch his concert live.</p>
+        </div>
+        
+        <div class="bucket-item">
+            <h2>Watch an NBA Game Live</h2>
+            <a href="Posters/nbaX.jpg" target="_self">
+                <img src="Posters/nbaX.jpg" alt="NBA Game">
+            </a>
+            <p>Watching NBA live is every man’s wish. I’ve been watching it since I was a kid and since then I always thought about how it feels to experience it live.</p>
+        </div>
+        
+        <div class="bucket-item">
+            <h2>Attend the Olympics</h2>
+            <a href="Posters/olympics.jpg" target="_self">
+                <img src="Posters/olympics.jpg" alt="Olympic Rings">
+            </a>
+            <p>The Olympics is every athlete’s dream. I don’t just want to experience it as a fan, but I want to experience it as a competitor too. It is the biggest competition in the world and it is my biggest dream.</p>
+        </div>
+        
+    </div>
+    <a href="#top" class="back-to-top">Back to Top</a>
+    
+</body>
+</html>

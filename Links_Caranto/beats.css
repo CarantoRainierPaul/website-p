@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+        background: linear-gradient(180deg, #ECDFCC, #FFFAEC);
+    }
+
+
+ul{
+    list-style: none;
+    background: #3C3D37;
+    text-align: center;
+    
+
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #ECDFCC;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+}
+ul li ul.dropdown li{
+    display: block;
+
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: #3C3D37;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:link{
+    color: #ECDFCC;
+}
+ul li a:visited{
+    color: #FFFAEC;
+}
+ul li a:focus{
+    text-decoration: underline;
+}
+ul li a:hover{
+     text-decoration: underline;
+     color:#ECDFCC;
+
+}
+ul li a:active{
+    text-decoration: underline;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+
+}
+/* Main Content */
+.container {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .mux {
+        text-align: left; /* Aligns text to the left */
+        font-size: 80px; /* Large, eye-catching text */
+        font-weight: bold; /* Makes it stand out */
+        color: #333; /* Dark gray for contrast */
+        margin-top: 50px; /* Increases the space from the top to push it down */
+        margin-left: 30px; /* Moves it further to the left */
+        margin-bottom: 20px; /* Adds spacing below */
+        text-transform: uppercase; /* Structuring the text */
+        border-left: 10px solid black; /* Thick left border for style */
+        padding-left: 20px; /* Creates spacing between text and border */
+        display: inline-block; /* Keeps it inline while allowing margin adjustments */
+    }
+    
+
+
+
+/* Section Styling */
+.music-item, section {
+    margin-bottom: 50px; /* Increased bottom margin */
+    padding: 30px;
+}
+
+/* Music Album Grid */
+.music-item h2, section h2 {
+    text-align: center;
+    font-size: 36px; /* Slightly larger */
+    color: #333;
+    margin-bottom: 5px;
+    text-transform: uppercase; /* Makes the text stand out */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    position: relative; /* Needed for the underline */
+    font-weight: bold;
+}
+
+/* Underline Effect */
+.music-item h2::after, section h2::after {
+    content: '';
+    width: 80px; /* Adjust width of underline */
+    height: 4px;
+    background: linear-gradient(to right, #333, #3C3D37); /* Gradient color */
+    display: block;
+    margin: 8px auto 0; /* Centers the underline */
+    border-radius: 2px;
+}
+
+/* Optional: Text Shadow for Extra Pop */
+.music-item h2, section h2 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Music List */
+.music-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; /* Increased gap between items */
+}
+
+/* Music Item */
+.music-content > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; /* Increased width */
+    padding: 25px; /* Increased padding */
+    border-radius: 12px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25); /* Stronger shadow */
+    background: #3C3D37;
+}
+
+/* Album Cover */
+.music-content img {
+    width: 150px; /* Larger image */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Artist Name */
+.music-content p {
+    font-size: 20px; /* Slightly larger text */
+    font-weight: bold;
+    margin: 12px 0;
+    text-align: center;
+    color: #FFFAEC;
+}
+
+/* Audio Player - Floating Above Background */
+.music-content audio {
+    width: 100%;
+    height: 50px; /* Larger audio player */
+    margin-top: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Floating effect */
+    position: relative; /* Ensures it stays on top */
+    z-index: 8; /* Higher value keeps it above other elements */
+    padding: 5px;
+}
+
+/*Back to top*/
+    .back-to-top {
+        position: absolute; /* Keeps it visible while scrolling */
+        bottom: -550px; /* Moves it further down */
+        left: 50%; /* Centers it horizontally */
+        transform: translateX(-50%); /* Ensures perfect centering */
+        background-color: #3C3D37; /* Matches your theme */
+        color: #ECDFCC; /* Text color */
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s ease-in-out;
+    }
+    
+    .back-to-top:hover {
+        background-color: #555; /* Darker color on hover */
+    }
+    
+

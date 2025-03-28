@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" Content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+/* Main Content Wrapper */
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100vh; /* Keeps content within the screen */
+    gap: 30px;
+}
+
+/* Video Section */
+.video-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 40%;
+}
+
+.video-wrapper video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Content (Intro, Description, Icons) */
+.right-content {
+    flex: 1;
+    text-align: center;
+    padding-left: 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Intro Text */
+.intro {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin: 20px 0; /* Adds margin above and below */
+    text-align: center;
+    width: 100%;
+}
+
+.video-description {
+    margin-left: 50px; /* Pushes it to the right */
+    margin-top: 20px; /* Adds spacing between the video and description */
+    padding: 20px; /* Adds some inner spacing */
+    width: 100%; /* Adjusted for better spacing */
+    background: #FFF;
+    border-radius: 10px;
+    border: 3px solid black; /* Added black border */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.video-description h2,
+.video-description .intro {
+    text-align: center;
+    margin-bottom: 15px; /* Space between heading and text */
+}
+
+
+.video-description p {
+    flex: 1;
+    color: #161614;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .video-wrapper video {
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+        padding-bottom: 0;
+    }
+    .right-content{
+        padding-left: 0;
+    }
+
+    .video-description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-description p {
+        max-width: 100%;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <a href="#">Biography ⬇</a>
+            <ul class="dropdown">
+                <li><a href="chy.html">Childhood Years</a></li>
+                <li><a href="tny.html">Teenage Years</a></li>
+                <li><a href="cle.html">College Experience</a></li>
+            </ul>    
+        </li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="photo_gallery.html">Photo Gallery</a></li>
+        <li><a href="beats.html">My Music</a></li>
+        <li><a href="movies.html">Movies I Like</a></li>
+        <li><a href="shows.html">TV Shows I like</a></li>
+        <li><a href="places.html">Dream Places</a></li>
+        <li><a href="bucket.html">Bucket Lists</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Left Side: Video -->
+        <div class="video-wrapper">
+            <video controls>
+                <source src="homepage.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Right Side: Text & Social Media -->
+        <div class="right-content">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Rainiieerr" target="_blank">
+                    <img src="ImgA/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/rainierpaul_" target="_blank">
+                    <img src="ImgA/instagram.jpg" alt="Instagram">
+                </a>
+                <a href="mailto:caranto.rainierpaul@ue.edu.ph.">
+                    <img src="ImgA/gmail1.jpg" alt="Gmail">
+                </a>
+            </div>
+
+            <div class="intro">
+                Hi! I'm Rainier Paul Caranto
+            </div>
+
+            <div class="video-description">
+                <p class="des">This website is a glimpse into my life, passions, and dreams. Here, you'll find my resume, showcasing my professional journey, skills, and experiences. My photo gallery holds memories that define me, while my favorite music and TV shows reflect my personality and creative side.
+
+                    I'm also a dreamer, with a list of bucket-list goals and dream destinations I hope to visit one day. Whether it’s exploring new places, capturing moments, or immersing myself in great music and films, this site is my personal space to share it all.
+                    
+                    Enjoy exploring, and thanks for stopping by!</p>
+               
+            </div>
+        </div>
+    </div>
+</body>
+</html>

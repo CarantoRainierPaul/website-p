@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Want to Visit Tokyo</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #fffaec;
+            margin: 0;
+            padding: 0;
+        }
+        .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+
+        /* Title */
+        h1 {
+            text-align: center;
+            color: #d12b2b;
+            margin: 30px 0;
+        }
+
+        /* Description */
+        .description {
+            max-width: 800px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        /* Gallery */
+        .gallery {
+            display:flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .gallery div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(50% - 20px); /* two items per row with gap */
+            box-sizing: border-box;
+        }
+        .gallery img {
+            width: 430px;
+            height: 286px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery p {
+            text-align: center;
+            color: #232323;
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .back-to-top {
+        position: absolute; /* Keeps it visible while scrolling */
+        bottom: -300px; /* Moves it further down */
+        left: 50%; /* Centers it horizontally */
+        transform: translateX(-50%); /* Ensures perfect centering */
+        background-color: #3C3D37; /* Matches your theme */
+        color: #ECDFCC; /* Text color */
+        padding: 12px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s ease-in-out;
+    }
+    
+    .back-to-top:hover {
+        background-color: #555; /* Darker color on hover */
+    }
+    </style>
+</head>
+
+<body id="top">
+    <a href="../places.html" class="back-button">⬅ Back to Dream Places</a>
+
+    <!-- ✅ Title -->
+    <h1>Why I Want to Visit Los Angeles</h1>
+
+    <!-- ✅ Description -->
+    <div class="description">
+        <p>Los Angeles captivates me with its mix of entertainment, culture, and natural beauty. I dream of walking along Hollywood Boulevard, relaxing at Santa Monica Beach, and experiencing the vibrant art scene downtown. The sunny weather, diversity, and iconic landmarks make LA a top destination on my list.</p>
+    </div>
+
+    <!-- ✅ Gallery -->
+    <div class="gallery">
+        <div>
+            <a href="../ImgA/la1.jpg" target="_self">
+                <img src="../ImgA/la1.jpg" alt="Hollywood Sign">
+            </a>
+            <p>Hollywood Sign - an American landmark and cultural icon overlooking Hollywood, Los Angeles.</p>
+        </div>
+        
+        <div>
+            <a href="../ImgA/la2.jpg" target="_self">
+                <img src="../ImgA/la2.jpg" alt="Santa Monica Pier">
+            </a>
+            <p>Santa Monica Pier - The Santa Monica Pier is a historic landmark featuring an amusement park, aquarium, restaurants, and scenic ocean views.</p>
+        </div>
+        
+        <div>
+            <a href="../ImgA/la3.jpg" target="_self">
+                <img src="../ImgA/la3.jpg" alt="Universal Studios Los Angeles">
+            </a>
+            <p>Universal Studios - A thrilling theme park and movie studio filled with rides, shows, and Hollywood magic.</p>
+        </div>
+        
+        <div>
+            <a href="../ImgA/la4.jpg" target="_self">
+                <img src="../ImgA/la4.jpg" alt="Venice Beach">
+            </a>
+            <p>Venice Beach - A vibrant spot known for its boardwalk, street performers, and laid-back beach vibes.</p>
+        </div>
+        
+    </div>
+    <a href="#top" class="back-to-top">Back to Top</a>
+</body>
+
+</html>

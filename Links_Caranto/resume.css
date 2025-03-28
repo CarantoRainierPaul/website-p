@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ECDFCC;
+    padding-top: 70px; /* Pushes content down below the navbar */
+}
+
+
+/* Navbar Styling */
+nav {
+    background: #3C3D37;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+ul.navbar {
+    list-style: none;
+    background: #3C3D37;
+    text-align: center;
+    
+
+}
+ul{
+    text-align: center;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 25px;
+    color: #ECDFCC;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+}
+ul li ul.dropdown li{
+    display: block;
+    text-align: center;
+    right: 10px;
+
+}
+ul li ul.dropdown{
+    width: 100%;
+    background: #3C3D37;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:link{
+    color: #ECDFCC;
+}
+ul li a:visited{
+    color: #FFFAEC;
+}
+ul li a:focus{
+    text-decoration: underline;
+}
+ul li a:hover{
+     text-decoration: underline;
+     color:#ECDFCC;
+
+}
+ul li a:active{
+    text-decoration: underline;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 0;
+    background: #000;
+    color:#FFFAEC;
+    font-size: 2em;
+    margin-top: 60px;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #000 ;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+p.description{
+        margin: 0;
+        font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    word-spacing:0;
+}
+.education {
+    text-align: center;
+}
+
+.education h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.education ul {
+    list-style-type: disc; /* Bulleted style */
+    text-align: left; /* Aligns text properly */
+    display: inline-block; /* Keeps it centered */
+    padding-left: 20px;
+}
+
+.education li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+p {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Makes the background only wrap around the text */
+}
+ol {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+/* Footer */
+p.foot{
+    background-color: #3C3D37 ;
+}
+footer {
+    text-align: center;
+    background: #3C3D37;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+    z-index: 1;
+}
